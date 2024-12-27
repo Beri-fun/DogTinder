@@ -1,0 +1,66 @@
+.background-div {
+    position: relative;
+    background: url('/static/dogs_park.webp') no-repeat center center;
+    border-radius: 30px !important;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.background-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px !important;
+}
+
+.background-div1 {
+    position: relative;
+    background: url('/static/dog_logo.jpg') no-repeat center center; 
+    background-size: cover;
+    border-radius: 30px !important;
+    width: 100%;
+    height: 300px;
+}
+
+.background-div1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 30px !important;
+}
+
+.content {
+    position: relative;
+    color: white;
+    z-index: 1; 
+}
+
+.background-home {
+    background: url('/static/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.background-home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(256, 256, 256, 0.8);
+}
+
+.content-home {
+    position: relative;
+    z-index: 1; 
+}
+
+.h_line:after { width:100%; height:2px; background: #fff; content:"" }

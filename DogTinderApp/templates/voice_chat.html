@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}DogTinder{% endblock %}</title>
+  {% load static %}
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  {% block style %}
+        <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_chat.css' %}" />
+    {% endblock %}
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'dog_logo.jpg' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/microphone.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/chat.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/reset_conversation.js' %}"></script>
+
+
+</head>
+<body class="background-home">
+
+  <main class="content-home" style="margin-top: 20px;">
+    {% csrf_token %}
+    <div class="container py-4">
+      <header class="pb-3 mb-3">
+        <div href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+          <a href="home">
+            <img src="{% static 'dog_logo.jpg' %}" class="img-fluid rounded" style="width: 70px; height: 70px; margin-right: 10px;">
+          </a>
+          <span class="fs-1"> <strong>  DogTinder</strong> </span>
+        </div>
+      </header>
+      <hr style="color: #000000 !important; height: 5px;">
+      <a class="btn btn-primary mb-3" id="reset_conversation" href="#" type="button" data-url="reset_conversation"> <i class="fa-solid fa-arrow-rotate-left"></i>  Start the conversation again</a>
+
+      <div class="container py-4" style="background-color: white; border-radius: 30px !important;">
+        <div class="chat-container d-flex flex-column" id="chatBox">
+            <!-- Dynamic messages here -->
+        </div>
+        <div class="mt-4 d-flex justify-content-center centered-button" >
+          <div class="microphone-container center">
+            <a class="btn btn-primary btn-lg" id="recording_button" type="button" data-recording="ready" ><i class="fas  fa-lg fa-microphone microphone-icon"></i></a>
+            <a class="btn btn-primary mb-3 d-none" id="dogs" href="dogs" type="button" data-url="dogs" style="margin-top: 16px;"> See our dogs </a>
+          </div>
+        </div>
+      </div>    
+
+      <hr style="color: #000000 !important; height: 5px;">
+      <footer class="mt-4 text-body-secondary float-end">
+        2024/25
+      </footer>
+    </div>
+  </main>
+
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

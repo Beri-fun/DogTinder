@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}DogTinder{% endblock %}</title>
+  {% load static %}
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  {% block style %}
+        <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_home.css' %}" />
+    {% endblock %}
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'dog_logo.jpg' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+
+</head>
+<body class="background-home">
+
+  <main style="margin-top: 30px;" class="content-home">
+    <div class="container mb-5">
+      <header class="pb-6 mb-2">
+        <div href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+          <a href="home">
+            <img src="{% static 'dog_logo.jpg' %}" class="img-fluid rounded" style="width: 70px; height: 70px; margin-right: 10px;">
+          </a>
+          <span class="fs-1"> <strong>  DogTinder</strong> </span>
+        </div>
+      </header>
+      <hr style="color: #000000 !important; height: 5px;">
+
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3" style="background-color: #ffffff; border-radius: 30px !important">
+        <div class="container-fluid py-5">
+          <h1 class="display-6 fw-bold">Find a pet with us!</h1>
+          <p class="col-md-8 fs-5">Are you looking for a four-legged friend who will fill your life with joy and love?
+            Our innovative assistant will make the adoption process simple, quick, and full of love.<br>
+            We will help you find the perfect dog for you!</p>
+          <a class="btn btn-primary " type="button" href="voiceChat">Start looking for a dog <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-dark text-white rounded-3 background-div"  style="border-radius: 30px !important">
+            <div class="content">
+              <h2>New chapter in your life</h2>
+              <p>Every dog deserves a second chance - and you could be the person who changes his life.
+                <br>
+                Adopting a dog is not only a joy for you, but also a new beginning for them.
+                Open your heart and home, and you'll gain a friend for life.
+                Our Voice Assistant is here to help you step by step, with care and love.
+                <br>
+                <br>
+                Start your story today <i class="fa-solid fa-paw"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-white border rounded-3 background-div1"  style="border-radius: 30px !important">
+            <div class="content">
+              <h2>Advantages of adoption - why is it worth it?</h2>
+              <p>
+                <i class="fa-solid fa-dog"></i> Joy and gratitude - Adopted dogs are exceptionally loyal and loving.<br>
+                <i class="fa-solid fa-house-chimney"></i> A New Beginning - You give your pet a second chance at a happy life.<br>
+                <i class="fa-solid fa-earth-americas"></i> You are helping the world - Every adoption reduces the number of homeless animals and supports shelters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="color: #000000 !important; height: 5px;">
+      <footer class="mt-4 text-body-secondary float-end">
+        2024/25
+      </footer>
+    </div>
+  </main>
+
+
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}DogTinder{% endblock %}</title>
+  {% load static %}
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  {% block style %}
+        <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_dogs.css' %}" />
+    {% endblock %}
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'dog_logo.jpg' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+
+</head>
+<body class="background-home">
+
+  <main style="margin-top: 40px;" class="content-home">
+    <div class="container">
+      <header class="pb-3 mb-2">
+        <div href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+          <a href="home">
+            <img src="{% static 'dog_logo.jpg' %}" class="img-fluid rounded" style="width: 70px; height: 70px; margin-right: 10px;">
+          </a>
+          
+          <span class="fs-1"> <strong>  DogTinder</strong> </span>
+        </div>
+      </header>
+      <hr style="color: #000000 !important; height: 5px;">
+      <a class="btn btn-primary mb-3"  href="voiceChat" type="button"> <i class="fa-regular fa-comments"></i>  Start the conversation</a>
+
+
+      <div class="container py-4">
+      <table>
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Photo</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+            {% for dog in dogs %}
+              <tr>
+                  <td><strong>{{ dog.name }}</strong></td>
+                  <td><img class="image-cell" src="{% static 'dogs/' %}{{ dog.name }}.png" alt="dog photo"></td>
+                  <td>{{ dog.description }}</td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+    </div>
+
+      <hr style="color: #000000 !important; height: 5px;">
+      <footer class="pt-3 mt-4 text-body-secondary float-end">
+        2024/25
+      </footer>
+    </div>
+  </main>
+
+
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
