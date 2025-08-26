@@ -8,6 +8,8 @@ DogTinder is an app that helps you navigate the dog matching process through nat
 
 Additionally, all voice responses (yours and the assistant's) are displayed as text in a dialog box to show the conversation history and allow you to return to previously provided information.
 
+The pretrained resnet50 is used to allow searching for similar dog photos in dogs set based on visual appearance.
+
 ## Matching criteria
 
 The assistant choose the dog based on: gender, activity level, size, age, coat length, is dog good for children, is dog good with other animals. 
@@ -31,6 +33,8 @@ He asks additional questions, such as whether you already have any pets at home 
 Based on your answers the app searches the database of dogs available for adoption.
 
 You receive a suggested match along with a description of the pet and contact information.
+
+You can also ask assistant to show the similar dog with the selected one based on visual appearance.
 
 ## How to start app
 It was run on Ubuntu 22.04, don't know how it behaves elsewhere.

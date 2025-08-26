@@ -32,7 +32,7 @@ class DogAssistant:
         self._questions = {
             "age": "What age dog are you interested in? (young, adult or senior)",
             "activity_level": "Are you looking for an active dog or more of a lap dog?",
-            "size": "How large a dog are you looking for? (small,medium or big)",
+            "size": "How large a dog are you looking for? (small, medium or big)",
             "sex": "What gender would you like your dog to be?",
             "hair_length": "Dogs have different coat types. Long-haired ones require more care and time. Would you like a long-haired or short-haired dog?",
             "other_pets": "Do you already have any pets at home that the dog will have contact with?",

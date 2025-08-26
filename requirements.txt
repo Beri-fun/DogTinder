@@ -9,10 +9,7 @@ soupsieve
 sqlparse
 typing_extensions
 numpy
-pandas
 scipy
-opencv-python
 pillow
 torch
 torchvision 
-tqdm
