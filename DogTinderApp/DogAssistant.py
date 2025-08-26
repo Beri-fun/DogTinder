@@ -268,7 +268,6 @@ class DogAssistant:
 
 
     def handle_input(self, user_input):
-        print(self._frame)
         if self._done and self._check_if_want_similar(user_input):
             another_dog_path = serach_for_similar_image('DogTinderApp/static/dogs/' + self.dog.name + ".png")
             photo_name = os.path.basename(another_dog_path)
