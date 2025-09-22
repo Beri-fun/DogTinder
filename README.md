@@ -12,6 +12,8 @@ Additionally, all voice responses (yours and the assistant's) are displayed as t
 
 The pretrained resnet50 is used to allow searching for similar dog photos in available set of dogs (for adoption), based on visual appearance.
 
+All photos/images are AI generated.
+
 ## Matching criteria
 
 The assistant choose the dog based on: gender, activity level, size, age, coat length, is dog good for children, is dog good with other animals. 
