@@ -41,32 +41,18 @@
 }
 
 body {
-    background-image: url('/static/background.png'); /* Ścieżka do obrazka z łapkami */
-    background-size: 100%; /* Cały obraz widoczny */
-    background-repeat: no-repeat; /* Bez powtarzania tła */
-    background-position: center top; /* Obraz wyśrodkowany, z górą dopasowaną */
-    background-attachment: fixed; /* Tło pozostaje na miejscu przy przewijaniu */
+    background-image: url('/static/background.png');
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center top; 
+    background-attachment: fixed; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Minimum wysokości strony */
+    min-height: 100vh;
 }
-
-/* .background-home {
-    background: url('/static/background.png') no-repeat center center;
-    background-size: cover;
-}
-
-.background-home::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(256, 256, 256, 0.8);
-} */
 
 .content-home {
     position: relative;

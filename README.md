@@ -12,6 +12,8 @@ Additionally, all voice responses (yours and the assistant's) are displayed as t
 
 The pretrained resnet50 is used to allow searching for similar dog photos in available set of dogs (for adoption), based on visual appearance.
 
+All photos/images are AI generated.
+
 ## Matching criteria
 
 The assistant choose the dog based on: gender, activity level, size, age, coat length, is dog good for children, is dog good with other animals. 
@@ -41,7 +43,7 @@ You can also ask assistant to show the similar dog to the selected one based on 
 After conversation you will be able to see all dogs ready for adoption.
 
 ## How to start app
-It was run on Ubuntu 22.04, don't know how it behaves elsewhere and using Python 3.10.
+It was run on Ubuntu 22.04 and using Python 3.10.
 
 Set environmental variables *SPEECH_KEY* and *SPEECH_REGION* to use the Microsoft Azure API.
 Install requirements specified in```\path\to\this\repo\requirements.txt ``` file.
